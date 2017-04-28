@@ -57,7 +57,7 @@ body, html{
 /*about section*/
 .about-section {
     text-align: left;
-    background: url('https://cdn.pixabay.com/photo/2016/11/23/18/15/board-1854180_960_720.jpg') no-repeat center center fixed;
+    background: url('AboutBackground.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 1000px;
 }
