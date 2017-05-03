@@ -4,10 +4,20 @@ body, html{
   height: 100%; // to the width and height of the window.
 }
 
+@media(min-width:767px) {
+    .navbar {
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
 
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
 
 /*home section*/
-.intro-header{
+.intro-section{
   padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
   text-align: center;
   background: url("images/HomeBackground.png") no-repeat center center fixed;
@@ -105,6 +115,7 @@ background : rgba(255, 255, 255, 0.9);
     background: url('images/PortfolioBackground.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 1300px;
+    text-align: center;
 }
 .bg-overlay3 {
   margin-top: -50px;
