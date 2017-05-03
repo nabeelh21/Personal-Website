@@ -193,3 +193,12 @@ footer{
 .list-inline{
   font-weight: bold;
 }
+
+a.footer-button:link { color:green; }
+a.footer-button:visited { color:green;}
+a.footer-button:hover { color:green; }
+a.footer-button:active { color:green; }
+
+p.copyright{
+  color:green;
+}
