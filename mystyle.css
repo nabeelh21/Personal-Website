@@ -1,9 +1,8 @@
-body, html{
-  background-color: white;
-  width: 100%;  // Sets the html and body width and height
-  height: 100%; // to the width and height of the window.
+body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
 }
-
 @media(min-width:767px) {
     .navbar {
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -14,6 +13,15 @@ body, html{
     .top-nav-collapse {
         padding: 0;
     }
+}
+
+h3.section-header {
+  margin-top:-20px;
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(23,209,60);
+  text-align:left;
+  text-shadow: 1px 1px 1px #000;
 }
 
 /*home section*/
@@ -63,21 +71,26 @@ body, html{
   margin-top: 30px;
 }
 
+
 /*about section*/
 .about-section {
-    text-align: left;
+    height: 100%;
+    padding-top: 90px;
+    text-align: center;
     background: url('images/AboutBackground.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 1000px;
 }
 .bg-overlay2 {
-  margin-top: -50px;
-  background: rgba(0,0,0, .1);
-  height: 1000px;
-}
 
+  margin-bottom: 25px;
+}
+.about-me-info.well{
+  border-color: green;
+  border-width: 1px;
+  border-style: solid;
+}
 .about-me-info{
-  margin-top: 80px;
+  margin-top: 30px;
   font-size: 17px;
 }
 .about-me-info> h3{
@@ -85,6 +98,7 @@ font-weight: bold;
 font-size: 40px;
 color: rgb(23,209,60);
 text-shadow: 1px 1px 1px #000;
+
 }
 .about-me-info> h4{
 font-weight: bold;
@@ -102,25 +116,26 @@ background : rgba(255, 255, 255, 0.9);
 }
 /*profile picture*/
 .img-circle {
-  margin-top: 80px;
   border-color: green;
   border-width: 2px;
   border-style: solid;
   border-radius: 50%;
+  margin-top: -20px;
 
 }
+
 
 /*potrfolio section*/
+
 .portfolio-section {
+    height: 100%;
+    padding-top: 90px;
+    text-align: center;
     background: url('images/PortfolioBackground.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 1300px;
-    text-align: center;
 }
 .bg-overlay3 {
-  margin-top: -50px;
-  background: rgba(0,0,0, 0.2);
-  height: 1300px;
+
 }
 .portfolio-item{
   margin-bottom: 25px;
@@ -143,7 +158,7 @@ background : rgba(255, 255, 255, 0.9);
 
 .project-titles{
   color: white;
-  text-shadow: 3px 3px 3px #000;
+  text-shadow: 2px 2px 2px #000;
 }
 
 .project-description{
@@ -151,22 +166,22 @@ background : rgba(255, 255, 255, 0.9);
   text-shadow: 1px 1px 1px #000;
 }
 
+
 /*contact section*/
 .contact-section {
+    height: 100%;
+    padding-top: 90px;
+    text-align: center;
     background: url('images/ContactBackground.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 600px;
 }
 .bg-overlay4 {
-  padding: 100px 0;
-  background: rgba(255,255,255, 0.1);
-  height: 600px;
+  margin-bottom: 30px;
 }
-
 .contact-social-buttons {
-    float: right;
-    margin-top: 0;
+    float: center;
     text-align: right;
+    margin-top: 30%;
 }
 
 ul.contact-social-buttons > li {
@@ -175,14 +190,6 @@ ul.contact-social-buttons > li {
     padding: 0;
 }
 
-h3.connect {
-  margin-top:-20px;
-  font-weight: bold;
-  font-size: 40px;
-  color: rgb(23,209,60);
-  text-align:left;
-  text-shadow: 1px 1px 1px #000;
-}
 
 h2.connect {
    margin: 0;
@@ -190,6 +197,8 @@ h2.connect {
    text-shadow: 1px 1px 1px #000;
    font-weight: bold;
    text-align:left;
+   font-size: 20px;
+   text-shadow: 1px 1px 1px #000;
 }
 
 p.copyright{
@@ -212,4 +221,98 @@ a.footer-button:active { color:green; }
 
 p.copyright{
   color:green;
+}
+
+
+/*
+Title: Creating an HTML5 enhanced responsive-ready contact form, with custom javascript feature detection
+Tutorial on: http://www.onextrapixel.com
+Author: http://www.toddmotto.com
+*/
+
+
+.wrapper {
+	max-width:620px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+  float:center;
+}
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea,
+#contact-form button[type="submit"] {
+	font:400 12px/12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#contact-form {
+	text-shadow:0 1px 0 #FFF;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	background:#F9F9F9;
+	padding:25px;
+  text-align: left;
+  margin-top: 20px;
+  border-color: green;
+  border-width: 1px;
+  border-style: solid;
+}
+#contact-form label span {
+	cursor:pointer;
+	color:green;
+	display:block;
+	margin:5px 0;
+	font-weight:900;
+}
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form input[type="url"],
+#contact-form textarea {
+	max-width:100%;
+	box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	-webkit-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	-moz-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	border-radius:5px;
+  width: 900px;
+}
+
+#contact-form textarea {
+	height:100px;
+	max-width:100%;
+}
+#contact-form button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:green;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	border-radius:5px;
+}
+
+#contact-form button[type="submit"]:active {
+	box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+    color:#888;
+}
+:-moz-placeholder {
+    color:#888;
+}
+::-moz-placeholder {
+    color:#888;
+}
+:-ms-input-placeholder {
+    color:#888;
 }
