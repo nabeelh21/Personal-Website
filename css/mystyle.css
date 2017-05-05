@@ -82,7 +82,7 @@ h3.section-header {
 }
 .bg-overlay2 {
 
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 .about-me-info.well{
   border-color: green;
@@ -135,6 +135,7 @@ background : rgba(255, 255, 255, 0.9);
     background-size: cover;
 }
 .bg-overlay3 {
+  margin-bottom: 35px;
 
 }
 .portfolio-item{
@@ -176,7 +177,7 @@ background : rgba(255, 255, 255, 0.9);
     background-size: cover;
 }
 .bg-overlay4 {
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 .contact-social-buttons {
     float: center;
