@@ -361,7 +361,7 @@ function map() {
 	mapTypeControl: false,
 	overviewMapControl: true,
 	scrollwheel: false,
-	draggable: false,
+	draggable: true,
 	styles: styles
     });
 
