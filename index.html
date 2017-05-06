@@ -1,342 +1,725 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="My Personal Website">
-    <meta name="keywords" content="website, personal">
+    <meta charset="utf-8">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Nabeel Hussain - Personal Page</title>
-    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> <!-- Add bootstrap styles -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Add font-awesome styles -->
+    <title>Nabeel Hussain | Portfolio</title>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- Add jQuery library -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!-- Add bootsrap library -->
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/scrolling-nav.js"></script>
-    <script src="js/scripts.js"></script>
+    <meta name="keywords" content="">
 
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,100%7CRoboto:400,700,300,100' rel='stylesheet' type='text/css'>
 
+    <!-- Bootstrap and Font Awesome css -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme stylesheet -->
+    <link href="css/style.green.css" rel="stylesheet" id="theme-stylesheet">
+
+    <!-- Custom stylesheet - for your changes -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- owl carousel css -->
+
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+
+    <!-- CSS Animations -->
+    <link href="css/animate.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+
+    <!-- Mordernizr -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+    <!-- Responsivity for older IE -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+<![endif]-->
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body data-spy="scroll" data-target="#navigation" data-offset="120">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse1">
+    <!-- *** NAVBAR ***
+_________________________________________________________ -->
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Nabeel Hussain</a>
+                <a class="navbar-brand scrollTo" href="#intro">Nabeel Hussain</a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-collapse1">
+            <div class="navbar-collapse collapse" id="navigation">
+
                 <ul class="nav navbar-nav navbar-right">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
+                    <li class="active"><a href="#intro">Intro</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#home"><strong>Home</strong></a>
+                    <li><a href="#about">About</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#about"><strong>About</strong></a>
+                    <li><a href="#resume">Resume</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio"><strong>Portfolio</strong></a>
+                    <li><a href="#references">Portfolio</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#contact"><strong>Contact</strong></a>
+                    <li><a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
+            <!--/.nav-collapse -->
+
         </div>
-        <!-- /.container -->
-    </nav>
+    </div>
+    <!-- /#navbar -->
 
-    <!-- Header -->
-    <section id="home" class="intro-section">
-      <div class="bg-overlay">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                  <div class="intro-message">
-                      <h1>Hello, I'm <span style = "color: rgb(23,209,60)">Nabeel Hussain</span></h1>
-                      <h2>Web Application Developer and Engineer</h2>
-                      <hr class="intro-divider">
-                      <ul class="list-inline intro-social-buttons">
-                          <li>
-                              <a href="https://www.facebook.com/nabeel.hussain.56" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="social-name">Facebook</span></a>
-                          </li>
-                          <li>
-                              <a href="https://github.com/nabeelh21" target="_blank" class="btn btn-default btn-lg "><i class="fa fa-github fa-fw"></i> <span class="social-name">Github</span></a>
-                          </li>
-                          <li>
-                              <a href="https://www.linkedin.com/in/nabeel-hussain-9912a152/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="social-name">Linkedin</span></a>
-                          </li>
-                          <li>
-                              <a href="https://www.freecodecamp.com/nabeelh21" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-free-code-camp fa-fw"></i> <span class="social-name">freeCodeCamp</span></a>
-                          </li>
-                      </ul>
-                  </div>
-                </div>
-            </div>
-        </div>
-      </div>
-    </section>
+    <!-- *** NAVBAR END *** -->
 
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-      <div class="bg-overlay2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                  <div>
-                    <h3 class ="section-header"> About</h3>
-                  </div>
-                  <img class="img-circle img-responsive center-block" width = "200" src="https://lh4.googleusercontent.com/-VeBGyFebqns/AAAAAAAAAAI/AAAAAAAABFg/2fZCA8cMEmA/photo.jpg" alt="">
-                    <div class="about-me-info text-left well ">
-                      <h4 class="about-header"> Nice to meet you</h4>
-                      <p > My name is Nabeel Hussain, and I am a computer science student at University of Maryland, University College. I currently work for a startup company based out of College Park, MD
-                        called TalkLocal, where I am the Operations Manager for the customer service team. I am a self taught web designer and constantly try to learn new things everyday with the hopes of becoming
-                        a full stack web developer in the near future. I also hold a degree in Economics from the University of Maryland, College Park where I graduated back in 2012.
-                      </br>
-                      </br>
-                      <strong>Competences:</strong></br></br>
-                      <strong>Languages and Frameworks:</strong></br>
-                      HTML5, CSS3, Javascript, jQuery, Bootstrap3, Java, C++, MySQL</br></br>
-                      <strong>Tools & Knowledge:</strong></br>
-                      GitHub, Responsive Web Design, Photoshop, SDLC, Agile Methodologies, Selenium Webdriver</br></br>
-                      <strong>Professional Skills:</strong></br>
-                      Strong attention to detail, written & verbal communication skills, analytical & problem solving skills,
-                      self-motivated, great at multitasking, team oriented, and proficient customer service and sales experience.</br>
-                      </div>
-                      </p>
+    <div id="all">
+
+
+        <!-- *** INTRO IMAGE ***
+_________________________________________________________ -->
+        <div id="intro" class="clearfix">
+            <div class="item">
+                <div class="container">
+                    <div class="row">
+                        <div class="carousel-caption">
+                            <div data-animate="fadeInDown" class="logo">
+                                <img src="img/My-Image.png" alt="logo" width="130">
+                            </div>
+                            <h1 data-animate="fadeInDown">Hello, I'm Nabeel Hussain</h1>
+                            <h2 data-animate="slideInUp">Web Application Developer and Engineer</h2>
+                            <hr data-animate="slideInUp" class="intro-divider">
+                            <ul  data-animate="slideInUp" class="list-inline intro-social-buttons">
+                                <li>
+                                    <a href="https://www.facebook.com/nabeel.hussain.56" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="social-name">Facebook</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/nabeelh21" target="_blank" class="btn btn-default btn-lg "><i class="fa fa-github fa-fw"></i> <span class="social-name">Github</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/nabeel-hussain-9912a152/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="social-name">Linkedin</span></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
-      </div>
-    </section>
 
+        <!-- *** INTRO IMAGE END *** -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio-section">
-      <div class="bg-overlay3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                  <h3 class ="section-header">Portfolio
-                      <small style = "color:white">Most Recent Projects</small>
-                  </h3>
-                </div>
-                <!-- Projects Row -->
+        <!-- *** ABOUT ***
+_________________________________________________________ -->
+        <div class="section" id="about">
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12 portfolio-item">
-                        <a href="https://codepen.io/nabeelh21/pen/BRZbXL" target="_blank">
-                            <img class="img-responsive" src="css/images/WikipediaViewer.png" alt="">
-                        </a>
-                        <h3>
-                            <p class = "project-titles">Wikipedia Viewer</p>
-                        </h3>
-                        <p class = "project-description" > Uses the Wikipedia API to retreive and display 10 articles relevant to a search query. Implements the API using JSON and jQuery. </p>
+
+                    <div class="col-sm-12">
+                        <h2 class="title" data-animate="fadeInDown">About me</h2>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 portfolio-item">
-                        <a href="https://codepen.io/nabeelh21/pen/JNNMvX" target="_blank">
-                            <img class="img-responsive" src="css/images/LocalWeatherApp.png" alt="">
-                        </a>
-                        <h3>
-                            <p class = "project-titles">Local Weather App</p>
-                        </h3>
-                        <p class = "project-description">Uses the API from OpenWeatherMap to display the weather information in the users geo location. Implements the API using JSON and jQuery.</p>
+
+                    <div class="col-sm-12">
+
+                        <div class="row">
+
+                            <div class="col-sm-6 text-left" data-animate="fadeInUp">
+
+                                <p>Hello, my name is Nabeel Hussain and I'm a computer science student at University of Maryland, University College. I currently work for a startup company based out of College Park, MD called TalkLocal, where I am the Operations Manager for the customer service team. I am a self taught web designer and constantly try to learn new things everyday with the hopes of becoming a full stack web developer in the near future. I also hold a degree in Economics from the University of Maryland, College Park where I graduated back in 2012.   </p>
+
+                                <strong>Languages and Frameworks:</strong></br>
+                                HTML5, CSS3, Javascript, jQuery, Bootstrap3, Java, C++, MySQL</br></br>
+                                <strong>Tools & Knowledge:</strong></br>
+                                GitHub, Responsive Web Design, Photoshop, SDLC, Agile Methodologies, Selenium Webdriver</br></br>
+                                <strong>Professional Skills:</strong></br>
+                                Strong attention to detail, written & verbal communication skills, analytical & problem solving skills,
+                                self-motivated, great at multitasking, team oriented, and proficient customer service and sales experience.</br>
+                                </p>
+                            </div>
+
+                            <div class="col-sm-6" data-animate="fadeInUp">
+
+                                <div class="skill-item">
+                                    <div class="progress-title">
+                                        JAVA
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-skill1" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                            <span class="sr-only">60</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="progress-title">
+                                        Javascript
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-skill2" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                            <span class="sr-only">70</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="progress-title">
+                                        HTML coding
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-skill3" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                            <span class="sr-only">80</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="progress-title">
+                                        C++
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-skill4" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                            <span class="sr-only">40</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="progress-title">
+                                        MySQL
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-skill5" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                            <span class="sr-only">40</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 portfolio-item">
-                        <a href="https://codepen.io/nabeelh21/pen/rmGMzr" target="_blank">
-                            <img class="img-responsive" src="css/images/Twitch.png" alt="">
-                        </a>
-                        <h3>
-                            <p class = "project-titles">Twitch.tv Streamers</p>
-                        </h3>
-                        <p class = "project-description">Uses a custom API for Twitch.tv provided by freeCodeCamp, in order to search for the streaming status of various twitch accounts. Implements the API using JSON and jQuery.</p>
+
+                    <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 mt-big" data-animate="bounceIn">
+                        <img src="img/about.jpg" class="image img-circle img-responsive" alt="This is me">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#about -->
+
+        <!-- *** ABOUT END *** -->
+
+        <!-- *** Resume ***
+_________________________________________________________ -->
+        <div class="section text-gradient" id="resume">
+            <div class="container">
+                <div class="col-md-12">
+                    <h2 class="title" data-animate="fadeInDown">Resume</h2>
+
+                    <div class="row resume">
+
+                        <div class="col-md-4" data-animate="fadeInUp">
+                            <div class="icon"><i class="fa fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="heading">B.S in Computer Science </h3>
+                            <p>Coursework: Java, C++, SQL, Data Structures & Algorithms, Object-Oriented Programming... (June 2015 - Present)</p>
+                        </div>
+
+                        <div class="col-md-4" data-animate="fadeInUp">
+                            <div class="icon">
+                              <img src="img/TalkLocalIcon-small.png" alt="TalkLocal logo">
+                            </div>
+                            <h3 class="heading">TalkLocal</h3>
+                            <p>Business Development & Product Support Intern (September 2012 – May 2014)</p>
+                        </div>
+
+                        <div class="col-md-4" data-animate="fadeInUp">
+                            <div class="icon">
+                              <img src="img/TalkLocalIcon-small.png" alt="TalkLocal logo">
+                            </div>
+                            <h3 class="heading">TalkLocal</h3>
+                            <p>Products & Operations Manager (May 2014 – Present)</p>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="text-center">
+
+                        <p class="lead">Would you like to know more?</p>
+
+                        <p><a href="#" class="btn btn-default btn-lg scrollTo">Download Resume</a>
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- /.12 -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.section -->
+
+        <!-- *** Resume END *** -->
+
+
+        <!-- *** SHOWCASE ***
+_________________________________________________________ -->
+        <div class="section text-parallax parallax-image1" id="resume">
+            <div class="container">
+                <div class="row showcase">
+                    <div class="col-md-3 col-sm-6" data-animate="fadeInUp">
+                        <div class="item">
+                            <div class="icon"><i class="fa fa-align-justify"></i>
+                            </div>
+                            <h4><span class="counter">2</span><br>
+
+			Websites</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6" data-animate="fadeInUp">
+                        <div class="item">
+                            <div class="icon"><i class="fa fa-users"></i>
+                            </div>
+                            <h4><span class="counter">2</span><br>
+
+			Satisfied Clients</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6" data-animate="fadeInUp">
+                        <div class="item">
+                            <div class="icon"><i class="fa fa-copy"></i>
+                            </div>
+                            <h4><span class="counter">10</span><br>
+
+			Projects</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6" data-animate="fadeInUp">
+                        <div class="item">
+                            <div class="icon"><i class="fa fa-font"></i>
+                            </div>
+                            <h4><span class="counter">2</span><br>
+
+			Magazines and Brochures</h4>
+                        </div>
                     </div>
                 </div>
                 <!-- /.row -->
-
-                <!-- Projects Row -->
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12 portfolio-item">
-                        <a href="https://codepen.io/nabeelh21/pen/RVVaQE" target="_blank">
-                            <img class="img-responsive" src="css/images/RandomQuoteGenerator.png" alt="">
-                        </a>
-                        <h3>
-                            <p class = "project-titles">Random Quote Generator</p>
-                        </h3>
-                        <p class = "project-description">Uses the API from Storm Consultancy to display random programming quotes to the user. Implements the API using JSON and jQuery.</p>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 portfolio-item">
-                        <a href="http://codepen.io/nabeelh21/" target="_blank">
-                            <img class="img-responsive" src="css/images/PortfolioSampleImage.png" alt="">
-                        </a>
-                        <h3>
-                            <a class = "project-titles" href="http://codepen.io/nabeelh21/">Project Name</a>
-                        </h3>
-                        <p class = "project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 portfolio-item">
-                        <a href="http://codepen.io/nabeelh21/" target="_blank">
-                            <img class="img-responsive" src="css/images/PortfolioSampleImage.png" alt="">
-                        </a>
-                        <h3>
-                            <a class = "project-titles" href="http://codepen.io/nabeelh21/">Project Name</a>
-                        </h3>
-                        <p class = "project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                    </div>
-                </div>
-
-                <!-- Projects Row -->
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12 portfolio-item">
-                        <a href="http://codepen.io/nabeelh21/" target="_blank">
-                            <img class="img-responsive" src="css/images/PortfolioSampleImage.png" alt="">
-                        </a>
-                        <h3>
-                            <a class = "project-titles" href="http://codepen.io/nabeelh21/">Project Name</a>
-                        </h3>
-                        <p class = "project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 portfolio-item">
-                        <a href="http://codepen.io/nabeelh21/" target="_blank">
-                            <img class="img-responsive" src="css/images/PortfolioSampleImage.png" alt="">
-                        </a>
-                        <h3>
-                            <a class = "project-titles" href="http://codepen.io/nabeelh21/">Project Name</a>
-                        </h3>
-                        <p class = "project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 portfolio-item">
-                        <a href="http://codepen.io/nabeelh21/" target="_blank">
-                            <img class="img-responsive" src="css/images/PortfolioSampleImage.png" alt="">
-                        </a>
-                        <h3>
-                            <a  class= "project-titles" href="http://codepen.io/nabeelh21/">Project Name</a>
-                        </h3>
-                        <p class = "project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                    </div>
-                </div>
-                <!-- /.row -->
-
             </div>
+            <!-- /.container -->
+
+            <div class="dark-mask"></div>
+
         </div>
-      </div>
-    </section>
+        <!-- /.section -->
 
+        <!-- *** REFERENCES IMAGE ***
+_________________________________________________________ -->
+        <div class="section" id="references">
+            <div class="container">
+                <div class="col-sm-12">
 
+                    <div class="mb20">
+                        <h2 class="title" data-animate="fadeInUp">Portfolio</h2>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-      <div class="bg-overlay4">
-        <div class="container">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="col-sm-6">
-                  <h3 class ="section-header">Contact</h3>
-                  <h2 class="connect">Fill the form below and I will get back to you as soon as possible.</a></h2>
-
-                  <div class = "form-body">
-                    <div class="wrapper">
-                      <div id="main">
-                      <!-- Form -->
-                      <form id="contact-form" action="/" method="post">
-                        <div>
-                          <label>
-                            <span>Name:</span>
-                            <input placeholder="Please enter your name" type="text" tabindex="1" required>
-                          </label>
-                        </div>
-                        <div>
-                          <label>
-                            <span>Email:</span>
-                            <input placeholder="Please enter your email address" type="email" tabindex="2" required>
-                          </label>
-                        </div>
-                        <div>
-                          <label>
-                            <span>Message:</span>
-                            <textarea placeholder="Include all the details you can" tabindex="5" required></textarea>
-                          </label>
-                        </div>
-                        <div>
-                          <button name="submit" type="submit" id="contact-submit">Send Email</button>
-                        </div>
-                      </form>
-                      </div>
+                        <p class="lead" data-animate="fadeInUp">Here is some of the latest work that I have done. </p>
                     </div>
-                  </div>
-              </div>
-              <div class="col-sm-6">
-                <ul class="list-inline contact-social-buttons ">
-                  <li>
-                    <a href="https://www.facebook.com/nabeel.hussain.56" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="social-name">Facebook</span></a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/nabeelh21" target="_blank" class="btn btn-default btn-lg "><i class="fa fa-github fa-fw"></i> <span class="social-name">Github</span></a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/in/nabeel-hussain-9912a152/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="social-name">Linkedin</span></a>
-                  </li>
-                  <li>
-                    <a href="https://www.freecodecamp.com/nabeelh21" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-free-code-camp fa-fw"></i> <span class="social-name">freeCodeCamp</span></a>
-                  </li>
-                </ul>
-              </div>
-              </div>
-            </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-                  <div class="col-xs-6">
-                    <ul class="list-inline">
-                    <li>
-                        <a class = "page-scroll footer-button" href="#home">Home</a>
-                    </li>
-                    <li class="dot-divider">&sdot;</li>
-                    <li>
-                        <a class = " page-scroll footer-button" href="#about">About</a>
-                    </li>
-                    <li class="dot-divider">&sdot;</li>
-                    <li>
-                        <a class = " page-scroll footer-button"  href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="dot-divider">&sdot;</li>
-                    <li>
-                        <a class = "page-scroll footer-button" href="#contact">Contact</a>
-                    </li>
-                  </ul>
+                    <ul id="filter" data-animate="fadeInUp">
+                        <li class="active"><a href="#" data-filter="all">All</a>
+                        </li>
+                        <li><a href="#" data-filter="webdesign">Web Design</a>
+                        </li>
+                        <li><a href="#" data-filter="marketing">Graphic Design/Marketing</a>
+                        </li>
+                        <li><a href="#" data-filter="other">Other</a>
+                        </li>
+                    </ul>
+
+                    <div id="detail">
+
+                        <span class="close">&times;</span>
+
+                        <div id="detail-slider"></div>
+
+                        <div class="text-center">
+                            <h1 id="detail-title">&nbsp;</h1>
+                        </div>
+
+                        <div id="detail-content"></div>
+
+                    </div>
+                    <!-- Reference detail -->
+
+                    <div id="references-masonry" data-animate="fadeInUp">
+
+                        <div class="reference-item" data-category="webdesign">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/Twitch.png" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">Twitch.tv Streamer Search</h3>
+                                        <p>Checks the streaming status of twitch.tv users</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/Twitch-Slider.png">
+
+                                    <p>Uses a custom API for Twitch.tv provided by freeCodeCamp, in order to search for the streaming status of various twitch accounts. Implements the API using JSON and jQuery.</p>
+
+                                    <p class="buttons">
+                                        <a class="btn btn-primary" href="https://codepen.io/nabeelh21/pen/rmGMzr" target="_blank"><i class="fa fa-globe"></i> Visit website</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reference-item" data-category="webdesign">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/WikipediaViewer.png" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">Wikipedia Viewer</h3>
+                                        <p>Displays Wikipedia articles for any search queries using an API. </p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/Wikipedia-Slider.png,img/Wikipedia-Slider2.png">
+
+                                    <p>This app uses the Wikipedia API to retrieve and display the top 10 search result articles for a given search query.  The API is retrieved using JSON and Jquery. </p>
+
+                                    <p class="buttons">
+                                        <a class="btn btn-primary" href="https://codepen.io/nabeelh21/pen/BRZbXL" target="_blank"><i class="fa fa-globe"></i> Visit website</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reference-item" data-category="webdesign">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/LocalWeatherApp.png" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">Local Weather App</h3>
+                                        <p>Displays the users current outside weather information using an API.</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/LocalWeather-slider.png">
+
+                                    <p>This app uses two API's to determine your location and then find the weather in your current area. To find the location, I used an API I found at http://ipinfo.io/developers in which I was able to retrieve the city and geographical coordinates. I then used those coordinates as an input parameter in the weather API I found at https://openweathermap.org/api. The API's are retrieved using JSON and jQuery. </p>
+
+                                    <p class="buttons">
+                                        <a class="btn btn-primary" href="https://codepen.io/nabeelh21/pen/JNNMvX" target="_blank"><i class="fa fa-globe"></i> Visit website</a>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="reference-item" data-category="webdesign">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/RandomQuoteGenerator.png" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">Random Quote Generator</h3>
+                                        <p>Displays random quotes to the user using an API</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/RandomQuote-slider.png">
+
+                                    <p>This is a random quote generator that uses an API I found online from http://quotes.stormconsultancy.co.uk/api in order to generate random programming quotes. It also incorporates twitter social media integration to allow users to tweet out any quote that they like. </p>
+
+                                    <p class="buttons">
+                                        <a class="btn btn-primary" href="https://codepen.io/nabeelh21/pen/RVVaQE" target="_blank"><i class="fa fa-globe"></i> Visit website</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reference-item" data-category="marketing">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/TalkLocalBrouchure.png" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">TalkLocal Brochure</h3>
+                                        <p>Created and designed the company's advertisement brouchure.</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/DoorHangerFront.jpg,img/DoorHangerBack.jpg,img/DoorHanger3.jpg">
+
+                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
+                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+
+                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
+                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+
+                                    <p class="buttons">
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reference-item" data-category="marketing">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/TalkLocalDoorHanger.png" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">TalkLocal Door Hanger</h3>
+                                        <p>Created and designed a door hanger to promote the company.</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/TalkLocalDoorHanger-slider.png">
+
+                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
+                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+
+                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
+                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+
+                                    <p class="buttons">
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reference-item" data-category="marketing">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/TalkLocalBusinessCards.png" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">TalkLocal Business Cards</h3>
+                                        <p>Created personal business cards for the company employees</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/TalkLocalBusinessCards-slider1.png,img/TalkLocalBusinessCards-slider2.png">
+
+                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
+                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+
+                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
+                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+
+                                    <p class="buttons">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reference-item" data-category="marketing">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/TalkLocalBannerAds.png" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">TalkLocal Online Banner Ads</h3>
+                                        <p>Created Online Banner Ads for TalkLocal</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/TalkLocalBannerAds-slider1.png, img/TalkLocalBannerAds-slider2.png, img/TalkLocalBannerAds-slider3.png, img/TalkLocalBannerAds-slider4.png">
+
+                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
+                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+
+                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
+                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+
+                                    <p class="buttons">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /#references-masonry -->
+
                 </div>
-                <div class="col-xs-6">
-                  <p class="copyright text-muted medium">Copyright &copy; Nabeel Hussain 2017. All Rights Reserved</p>
-              </div>
+                <!-- /.12 -->
             </div>
-          </div>
-      </div>
-    </footer>
+            <!-- /.container -->
+        </div>
+        <!-- /.section -->
+
+        <!-- *** REFERENCES END *** -->
+
+
+        <!-- *** CONTACT ***
+_________________________________________________________ -->
+
+        <div class="section contact text-parallax parallax-image2" id="contact">
+            <div class="container" data-animate="bounceIn">
+                <div class="col-md-12">
+
+
+                    <h2 class="contact-title">Contact me</h2>
+
+                    <div class="row">
+
+                        <div class="col-md-8 col-md-offset-2">
+                            <form id="contact-form" method="post" action="contact.php">
+
+                                <div class="messages">
+
+                                </div>
+
+                                <div class="controls">
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input type="text" name="name" class="form-control" placeholder="Your firstname *" required="required">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" name="surname" class="form-control" placeholder="Your lastname *" required="required">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" name="email" class="form-control" placeholder="Your email *" required="required">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" name="phone" class="form-control" placeholder="Your phone">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <textarea name="message" class="form-control" placeholder="Message for me *" rows="4" required="required"></textarea>
+                                        </div>
+                                        <div class="col-md-12 text-center">
+                                            <input type="submit" class="btn btn-primary btn-lg" value="Send message">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- /.12 -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.section -->
+
+        <!-- *** CONTACT END *** -->
+
+        <!-- *** MAP ***
+_________________________________________________________ -->
+
+        <div class="section" id="map">
+
+        </div>
+        <!-- /.section -->
+
+        <!-- *** MAP END *** -->
+
+        <!-- *** FOOTER ***
+_________________________________________________________ -->
+
+        <div class="section" id="footer">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-sm-6">
+
+                        <p class="social">
+                            <a href="https://www.facebook.com/nabeel.hussain.56" class="external facebook" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/nabeel-hussain-9912a152/" class="external linkedin" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/nabeelh21" class="external github" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-github"></i></a>
+                            <a href="#" class="email" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
+                        </p>
+                    </div>
+                    <!-- /.6 -->
+
+                    <div class="col-sm-6">
+                        <p>&copy; 2017 Nabeel Hussain. All rights reserved.</p>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <p class="template-bootstrapious">Inspired by <a href="https://www.bootstrapious.com/">Bootstrapious</a></p>
+
+                        <!-- Please do not remove the backlink to us, unless you support the development at https://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :)        -->
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.section -->
+
+        <!-- *** FOOTER END *** -->
+
+
+
+    </div>
+    <!-- /#all -->
+
+    <!-- #### JAVASCRIPT FILES ### -->
+
+    <!-- js base -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- for demo purpose -->
+    <script src="js/jquery.cookie.js"></script>
+
+    <!-- waypoints for scroll spy -->
+    <script src="js/waypoints.min.js"></script>
+
+    <!-- maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <script src="js/gmaps.js"></script>
+
+    <!-- masonry layout -->
+    <script src="js/masonry.pkgd.min.js"></script>
+
+    <!-- owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+
+
+    <!-- jQuery scroll to -->
+    <script src="js/jquery.scrollTo.min.js"></script>
+
+    <!-- jQuery counter -->
+    <script src="js/jquery.counterup.min.js"></script>
+
+    <!-- jQuery parallax -->
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+
+    <!-- main js file -->
+
+    <script src="js/front.js"></script>
 
 </body>
+
 </html>
