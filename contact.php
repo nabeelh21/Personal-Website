@@ -15,8 +15,6 @@ $htmlContent = '<h1>New message from contact form</h1>';
 // If something goes wrong, we will display this message.
 $errorMessage = 'There was an error while submitting the form. Please try again later';
 
-$htmlContent = '<h1>New message from contact form</h1>';
-
 /* DO NOT EDIT BELOW */
 
 /* use classes */
