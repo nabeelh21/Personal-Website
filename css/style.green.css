@@ -172,6 +172,7 @@ UNIVERSAL SECTION STYLES
 }
 .text-parallax.parallax-image2 {
   background: url('../img/parallax2.jpg') center center no-repeat fixed;
+  background-position: center;
 }
 @media (max-width: 991px) {
   .text-parallax {
